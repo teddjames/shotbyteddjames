@@ -84,7 +84,7 @@ a { color: var(--ink); text-decoration: none; }
 .footer-inner { display: flex; justify-content: space-between; align-items: center; }
 .flags {
   display: inline-flex;
-  gap: 6px; /* space between flags */
+  gap: 6px; 
   margin-left: 6px;
 }
 
