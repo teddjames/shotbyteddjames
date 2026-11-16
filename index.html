@@ -1,162 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tedd James – Visual Artist</title>
-
-  <!-- Fonts -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ede1d4">
+  <meta name="description" content="ShotbyTJ by Tedd James — an independent visual artist capturing music, culture, emotion, and the beautiful chaos in between.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ShotbyTJ — Frames with Feeling">
+  <meta property="og:description" content="An immersive photography archive by Tedd James.">
+  <meta property="og:image" content="images/96-DSC_0251.jpg">
+  <title>ShotbyTJ® — Frames with Feeling | Tedd James</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
 </head>
 <body>
-
-<header class="site-header" id="top">
-  <div class="container header-inner">
-    <a href="#home" class="logo">Tedd James – Visual Artist</a>
-
-    <button
-      class="hamburger"
-      id="hamburger"
-      aria-label="Toggle menu"
-      aria-controls="primary-nav"
-      aria-expanded="false">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </button>
-
-    <nav class="nav" id="primary-nav" hidden>
-      <a href="#work">Portfolio</a>
-      <span class="divider">•</span>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<!-- Hero -->
-<section id="home" class="hero">
-  <div class="container">
-    <h1 class="hero-title">
-      All about Visual Aesthetics & Capturing Moments
-    </h1>
-  </div>
-</section>
-
-<hr class="rule" />
-
-<!-- Portfolio Intro -->
-<section id="work" class="intro">
-  <div class="container">
-    <h2 class="intro-eyebrow">Portfolio</h2>
-    <p>
-      A curated showcase of my vintage aesthetics and dynamic visual moments.
-    </p>
-    <p class="intro-lead">
-        Tap the card-holders below to view gallery</p>
-  </div>
-</section>
-
-<!-- Portfolio Grid -->
-<section class="portfolio-section">
-  <div class="container">
-    <div class="portfolio-grid">
-
-      <div class="portfolio-item">
-        <a href="https://teddjames.pixieset.com/cizaspalace/" target="_blank" rel="noopener">
-          <img src="./images/96-DSC_0251.jpg" alt="Ciza's Palace">
-          <div class="portfolio-caption"><h3>Ciza's Palace</h3></div>
-        </a>
+  <!-- A minimal editorial loading curtain. -->
+  <div class="site-loader" id="siteLoader" role="status" aria-label="Preparing ShotbyTJ portfolio">
+    <div class="loader-frame">
+      <div class="loader-masthead">
+        <span class="loader-brand">SHOTBY<span>TJ</span><sup>®</sup></span>
+        <span class="loader-edition">PHOTOGRAPHY / VISUAL JOURNAL</span>
       </div>
-
-      <div class="portfolio-item">
-        <a href="https://Shotbyteddjames.pixieset.com/keystotheblock/" target="_blank" rel="noopener">
-          <img src="./images/DSC_0454.jpg" alt="Uncool">
-          <div class="portfolio-caption"><h3>MC Uncool</h3></div>
-        </a>
+      <div class="loader-statement" id="loaderStatement">
+        <span class="loader-overline">THE ART OF SEEING DIFFERENTLY</span>
+        <p>Every frame<br>has a <em>feeling.</em></p>
       </div>
-
-      <div class="portfolio-item">
-        <a href="https://teddjames.pixieset.com/carphotography/" target="_blank" rel="noopener">
-          <img src="./images/11-DSC_0116.jpg" alt="Car Photography">
-          <div class="portfolio-caption"><h3>Car Photography</h3></div>
-        </a>
+      <div class="loader-footer">
+        <span id="loaderStatus" class="loader-status" aria-live="polite">Preparing the stories</span>
+        <div class="loader-progress" aria-hidden="true"><span id="loaderProgressBar"></span></div>
+        <span id="loaderPercent" class="loader-percent" aria-hidden="true">00%</span>
       </div>
-
-      <div class="portfolio-item">
-        <a href="https://teddjames.pixieset.com/naturephotography/" target="_blank" rel="noopener">
-          <img src="./images/DSC_0376.jpg" alt="Event Photography">
-          <div class="portfolio-caption"><h3>Event Photography</h3></div>
-        </a>
-      </div>
-
-      <div class="portfolio-item">
-        <a href="https://teddjames.pixieset.com/streetandurbanphotography/" target="_blank" rel="noopener">
-          <img src="./images/3-DSC_0186.jpg" alt="Cinematics">
-          <div class="portfolio-caption"><h3>Cinematics</h3></div>
-        </a>
-      </div>
-
-      <div class="portfolio-item">
-        <a href="https://shotbyteddjames.pixieset.com/palmsandpiano2/" target="_blank" rel="noopener">
-          <img src="./images/120-DSC_0409.jpg" alt="Palms & Piano">
-          <div class="portfolio-caption"><h3>Palms & Piano</h3></div>
-        </a>
-      </div>
-
-      <div class="portfolio-item">
-        <a href="https://shotbyteddjames.pixieset.com/costaworld/" target="_blank" rel="noopener">
-          <img src="./images/costaworldpfp.jpg" alt="Costa World">
-          <div class="portfolio-caption"><h3>Costa World</h3></div>
-        </a>
-      </div>
-
-      <div class="portfolio-item">
-        <a href="https://teddjames.pixieset.com/redroomabantuxxfest/" target="_blank" rel="noopener">
-          <img src="./images/DSC_0173.jpg" alt="Abantu & Xfest">
-          <div class="portfolio-caption"><h3>Abantu & Xfest</h3></div>
-        </a>
-      </div>
-
-      <div class="portfolio-item">
-        <a href="https://teddjames.pixieset.com/soundsofserengeti/" target="_blank" rel="noopener">
-          <img src="./images/SOS1.jpg" alt="The Playground – SOS">
-          <div class="portfolio-caption"><h3>The Playground – SOS</h3></div>
-        </a>
-      </div>
-
+      <button class="loader-enter" id="loaderEnter" type="button">ENTER PORTFOLIO <span aria-hidden="true">↗</span></button>
     </div>
   </div>
-</section>
+  <a class="skip-link" href="#work">Skip to photography</a>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="page-progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <div class="cursor-halo" id="cursorHalo" aria-hidden="true"></div>
 
-<!-- Contact -->
-<section id="contact" class="contact">
-  <div class="container">
-    <h2 class="contact-title">Socials</h2>
-    <div class="contact-links">
-      <a href="https://www.instagram.com/teddjamez/" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://www.linkedin.com/in/tedd-james" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="mailto:iamteddjames@gmail.com">Email</a>
+  <header class="site-header" id="top">
+    <div class="header-inner wrap">
+      <a class="brand" href="#home" aria-label="ShotbyTJ, back to top">
+        <span>SHOTBY<span class="brand-accent">TJ</span><sup>®</sup></span>
+      </a>
+      <span class="header-note">INDEPENDENT VISUAL ARTIST <span class="note-star">✳</span> KENYA & MALAYSIA</span>
+      <button id="menuToggle" class="menu-toggle" type="button" aria-controls="mainNav" aria-expanded="false" aria-label="Open navigation"><span></span><span></span></button>
+      <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+        <a href="#work">The work <span>↗</span></a>
+        <a href="#archive">Archive <span>↗</span></a>
+        <a href="#about">About <span>↗</span></a>
+        <a class="nav-contact" href="#contact">Let's talk <span>↗</span></a>
+      </nav>
     </div>
-  </div>
-</section>
+  </header>
 
-<footer class="footer">
-<div class="container footer-inner">
-  <span>
-    © <span id="year"></span> Tedd James 
-    <span class="flags">
-      <img src="./images/kenyan flag.png" alt="Kenya Flag">
-      <img src="./images/malaysian flag.png" alt="Malaysia Flag">
-    </span>
-  </span>
-  <a href="#home">↑</a>
-</div>
-</footer>
+  <main>
+    <section class="hero" id="home" aria-labelledby="heroTitle">
+      <div class="hero-topline wrap">
+        <span class="eyebrow"><span class="status-dot"></span> OPEN FOR CREATIVE COLLABORATIONS</span>
+        <span class="eyebrow hero-edition">A VISUAL JOURNAL</span>
+      </div>
+      <div class="hero-heading wrap">
+        <p class="hero-prefix" data-reveal>AN EXERCISE IN SEEING DIFFERENTLY.</p>
+        <h1 id="heroTitle" data-reveal>FRAMES <span class="serif word-with">with</span><br><span class="feeling-word">FEELING<span class="heading-period">.</span></span></h1>
+      </div>
+      <div class="hero-body wrap">
+        <div class="hero-copy" data-reveal>
+          <span class="line-ornament"></span>
+          <p>Some moments aren't meant to sit still. I turn the music, movement and little details into images you can <em>feel.</em></p>
+          <a class="pill-link pill-link-dark" href="#work"><span>Explore the work</span><span class="pill-arrow">↗</span></a>
+          <div class="hero-pagination"><span>001</span><div class="small-line"></div><span>VISUAL ARCHIVE</span></div>
+        </div>
 
-<script src="index.js"></script>
+        <div class="hero-sculpture" id="heroSculpture" aria-label="Interactive 3D arrangement of Tedd James photographs. Drag to rotate it.">
+          <div class="orbit-track orbit-track-a" aria-hidden="true"></div>
+          <div class="orbit-track orbit-track-b" aria-hidden="true"></div>
+          <div class="sculpture-space" id="sculptureSpace">
+            <div class="photo-piece piece-left"><img src="images/11-DSC_0116.jpg" alt="Warm detail photograph of a Porsche emblem" fetchpriority="high"><span class="piece-label">DETAIL / 02</span></div>
+            <div class="photo-piece piece-right"><img src="images/45-DSC_0610.jpg" alt="Smiling festival attendee holding an X Fest sign" fetchpriority="high"><span class="piece-label">CULTURE / 03</span></div>
+            <div class="photo-piece piece-main"><img src="images/96-DSC_0251.jpg" alt="DJ performing beneath neon club lights" fetchpriority="high"><span class="piece-label">THE NIGHT / 01</span></div>
+            <div class="photo-piece piece-bottom"><img src="images/3-DSC_0186.jpg" alt="Experimental abstract neon-light long exposure" fetchpriority="high"></div>
+            <div class="floating-label floating-label-left" aria-hidden="true">Visual Aesthetics</div>
+            <div class="floating-label floating-label-right" aria-hidden="true">↗ PHOTO GALLERIES</div>
+          </div>
+          <div class="scene-spark scene-spark-a" aria-hidden="true">✳</div>
+          <div class="scene-spark scene-spark-b" aria-hidden="true">✳</div>
+          <div class="sculpture-controls">
+            <span class="drag-hint"><span class="drag-hint-icon">↔</span> DRAG TO ORBIT</span>
+            <button id="explodeToggle" class="scene-button" type="button" aria-pressed="false"><span class="scene-icon" aria-hidden="true">✳</span><span id="explodeLabel">EXPLODE THE FRAME</span><span aria-hidden="true">↗</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="hero-bottom wrap"><span>SCROLL TO EXPLORE ↓</span><span>PHOTOGRAPHY, WITH A PULSE.</span></div>
+    </section>
+
+    <div class="ticker" aria-hidden="true"><div class="ticker-line"><span>AN EYE FOR THE UNEXPECTED <b>✳</b> AN EYE FOR THE UNEXPECTED <b>✳</b> AN EYE FOR THE UNEXPECTED <b>✳</b> AN EYE FOR THE UNEXPECTED <b>✳</b></span><span>AN EYE FOR THE UNEXPECTED <b>✳</b> AN EYE FOR THE UNEXPECTED <b>✳</b> AN EYE FOR THE UNEXPECTED <b>✳</b> AN EYE FOR THE UNEXPECTED <b>✳</b></span></div></div>
+
+    <section class="selected" id="work" aria-labelledby="selectedTitle">
+      <div class="wrap">
+        <div class="section-top section-top-light"><span><span class="section-bullet">✳</span> 01 / SELECTED STORIES</span><span>THE ONES THAT STAY WITH YOU</span></div>
+        <div class="selected-intro">
+          <h2 id="selectedTitle" data-reveal>DON'T JUST <em>look.</em><br><span>FEEL IT.</span></h2>
+          <p data-reveal>From the front row to the after-hours. A few of my favourite frames, made for the moments that matter.</p>
+        </div>
+        <div class="showcase">
+          <div class="showcase-side showcase-side-left"><span>SELECTED / 2022—NOW</span><span class="side-rule"></span><span>SHOTBYTJ ©</span></div>
+          <div class="gallery-stage" id="galleryStage" tabindex="0" role="group" aria-roledescription="carousel" aria-label="Selected photography projects. Use left and right arrow keys, or drag to browse.">
+            <!-- Cards are rendered from the same project data as the portfolio index. -->
+          </div>
+          <div class="showcase-side showcase-side-right"><span>IMAGES MADE TO FEEL</span><span class="side-rule"></span><span>↗</span></div>
+        </div>
+        <div class="showcase-bottom">
+          <div class="project-meta" aria-live="polite" aria-atomic="true"><span class="project-counter" id="projectCounter">01 / 09</span><div><h3 id="projectTitle">Ciza's Palace</h3><p id="projectCategory">LIVE MUSIC &amp; NIGHTLIFE</p></div></div>
+          <div class="gallery-actions"><button class="circle-arrow" id="galleryPrev" type="button" aria-label="Previous project">←</button><button class="circle-arrow" id="galleryNext" type="button" aria-label="Next project">→</button><a class="gallery-open" id="galleryOpen" href="https://teddjames.pixieset.com/cizaspalace/" target="_blank" rel="noopener noreferrer">Open gallery <span>↗</span></a></div>
+        </div>
+        <div class="gallery-progress" aria-hidden="true"><div id="galleryProgressFill"></div></div>
+      </div>
+    </section>
+
+    <section class="interlude" aria-label="Photography philosophy">
+      <div class="wrap interlude-inner"><span class="interlude-label">A NOTE FROM BEHIND THE LENS —</span><p data-reveal>Life doesn't come with a <em>pause button.</em><br>That's why I make photographs.</p><span class="interlude-mark">✳</span></div>
+    </section>
+
+    <section class="archive" id="archive" aria-labelledby="archiveTitle">
+      <div class="wrap">
+        <div class="section-top"><span><span class="section-bullet">✳</span> 02 / THE ARCHIVE</span><span>MANY COLLECTIONS, ONE PERSPECTIVE</span></div>
+        <div class="archive-heading"><h2 id="archiveTitle" data-reveal>THE IMAGE <em>INDEX.</em></h2><p data-reveal>Every frame has a story. Find the ones that speak to you.</p></div>
+        <div class="filterbar" role="group" aria-label="Filter photographs by category">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">ALL <span>09</span></button>
+          <button class="filter-button" type="button" data-filter="events" aria-pressed="false">LIVE &amp; EVENTS</button>
+          <button class="filter-button" type="button" data-filter="culture" aria-pressed="false">CULTURE &amp; PEOPLE</button>
+          <button class="filter-button" type="button" data-filter="automotive" aria-pressed="false">AUTOMOTIVE</button>
+          <button class="filter-button" type="button" data-filter="experimental" aria-pressed="false">EXPERIMENTAL</button>
+        </div>
+        <div class="archive-grid" id="archiveGrid">
+          <a class="archive-card card-tall" data-category="events" href="https://teddjames.pixieset.com/cizaspalace/" target="_blank" rel="noopener noreferrer"><div class="archive-image"><img src="images/96-DSC_0251.jpg" alt="DJ immersed in vibrant pink and blue club lighting" loading="lazy"><span class="archive-go" aria-hidden="true">↗</span></div><div class="archive-caption"><span>01 / LIVE &amp; EVENTS</span><h3>Ciza's Palace</h3></div></a>
+          <a class="archive-card card-short" data-category="experimental" href="https://teddjames.pixieset.com/streetandurbanphotography/" target="_blank" rel="noopener noreferrer"><div class="archive-image"><img src="images/3-DSC_0186.jpg" alt="Colour-smeared abstract long-exposure night photograph" loading="lazy"><span class="archive-go" aria-hidden="true">↗</span></div><div class="archive-caption"><span>02 / EXPERIMENTAL</span><h3>Cinematics</h3></div></a>
+          <a class="archive-card card-standard" data-category="automotive" href="https://teddjames.pixieset.com/carphotography/" target="_blank" rel="noopener noreferrer"><div class="archive-image"><img src="images/11-DSC_0116.jpg" alt="Porsche badge lit by warm orange light" loading="lazy"><span class="archive-go" aria-hidden="true">↗</span></div><div class="archive-caption"><span>03 / AUTOMOTIVE</span><h3>Car Photography</h3></div></a>
+          <a class="archive-card card-standard" data-category="culture" href="https://shotbyteddjames.pixieset.com/costaworld/" target="_blank" rel="noopener noreferrer"><div class="archive-image"><img src="images/costaworldpfp.jpg" alt="Festivalgoers holding Costa World signs and smiling" loading="lazy"><span class="archive-go" aria-hidden="true">↗</span></div><div class="archive-caption"><span>04 / CULTURE &amp; PEOPLE</span><h3>Costa World</h3></div></a>
+          <a class="archive-card card-tall" data-category="events" href="https://shotbyteddjames.pixieset.com/palmsandpiano2/" target="_blank" rel="noopener noreferrer"><div class="archive-image"><img src="images/120-DSC_0409.jpg" alt="Crowd singing along with hands in the air at a nightclub" loading="lazy"><span class="archive-go" aria-hidden="true">↗</span></div><div class="archive-caption"><span>05 / LIVE &amp; EVENTS</span><h3>Palms &amp; Piano</h3></div></a>
+          <a class="archive-card card-standard" data-category="events" href="https://Shotbyteddjames.pixieset.com/keystotheblock/" target="_blank" rel="noopener noreferrer"><div class="archive-image"><img src="images/DSC_0454.jpg" alt="DJ performing over decks with blue smoke and warm light" loading="lazy"><span class="archive-go" aria-hidden="true">↗</span></div><div class="archive-caption"><span>06 / LIVE &amp; EVENTS</span><h3>MC Uncool</h3></div></a>
+          <a class="archive-card card-short" data-category="events" href="https://teddjames.pixieset.com/redroomabantuxxfest/" target="_blank" rel="noopener noreferrer"><div class="archive-image"><img src="images/DSC_0173.jpg" alt="Abantu name projected across a smoky blue concert stage" loading="lazy"><span class="archive-go" aria-hidden="true">↗</span></div><div class="archive-caption"><span>07 / LIVE &amp; EVENTS</span><h3>Abantu × Xfest</h3></div></a>
+          <a class="archive-card card-standard" data-category="events" href="https://teddjames.pixieset.com/naturephotography/" target="_blank" rel="noopener noreferrer"><div class="archive-image"><img src="images/DSC_0376.jpg" alt="Three festival attendees smiling beneath blue stage lighting" loading="lazy"><span class="archive-go" aria-hidden="true">↗</span></div><div class="archive-caption"><span>08 / LIVE &amp; EVENTS</span><h3>Event Photography</h3></div></a>
+          <a class="archive-card card-standard" data-category="culture" href="https://teddjames.pixieset.com/soundsofserengeti/" target="_blank" rel="noopener noreferrer"><div class="archive-image"><img src="images/SOS1.jpg" alt="Two smiling people holding printed shirts at an outdoor creative event" loading="lazy"><span class="archive-go" aria-hidden="true">↗</span></div><div class="archive-caption"><span>09 / CULTURE &amp; PEOPLE</span><h3>The Playground — SOS</h3></div></a>
+        </div>
+        <p class="archive-end"><span>YOU'VE REACHED THE END OF THE INDEX.</span><span>THE STORIES NEVER REALLY END ↗</span></p>
+      </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="aboutTitle">
+      <div class="wrap about-layout">
+        <div class="about-visual" data-reveal>
+          <div class="about-visual-underlay"></div><div class="about-visual-photo"><img src="images/45-DSC_0610.jpg" alt="Festival attendee smiling and holding an X Fest sign" loading="lazy"></div>
+          <div class="photo-sticker sticker-top">Capture <em>the</em><br>moments</div><div class="photo-sticker sticker-bottom">KEEP IT<br>authentic ✳</div>
+        </div>
+        <div class="about-content" data-reveal><div class="section-top"><span><span class="section-bullet">✳</span> 03 / BEHIND THE CAMERA</span></div><h2 id="aboutTitle">HI, I'M <em>TEDD.</em></h2><p class="about-lead">Photographer. Moment-chaser. Collector of the beautifully unplanned.</p><p>I'm Tedd James, the eye behind ShotbyTJ. I photograph the atmosphere as much as the action — the people, the feeling, the details everyone else might miss.</p><p>My visual language blends nostalgic textures with bold colour and a little unpredictability. Whether it's a packed dancefloor or a quiet detail, I want the final image to take you right back there.</p><div class="about-notes"><span>BASED BETWEEN</span><strong>KENYA <span>✳</span> MALAYSIA</strong></div><a href="#contact" class="text-link">Have something in mind? <span>↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contactTitle">
+      <div class="wrap contact-inner"><div class="contact-top"><span><span class="section-bullet">✳</span> 04 / SAY HELLO</span><span>THE NEXT FRAME IS YOURS.</span></div><p class="contact-overline">GOT A STORY TO TELL?</p><h2 id="contactTitle" data-reveal>LET'S MAKE<br><em>SOMETHING</em><br>MEMORABLE<span class="contact-dot">.</span></h2><div class="contact-bottom"><p>Shows, people, campaigns, unexpected ideas.<br>I'm always up for making something good.</p><div class="contact-actions"><a class="contact-pill contact-instagram" href="https://www.instagram.com/teddjamez/" target="_blank" rel="noopener noreferrer"><span>INSTAGRAM</span><span aria-hidden="true">↗</span></a><a class="contact-pill contact-email" href="mailto:iamteddjames@gmail.com?subject=Let's%20Create%20Something"><span>EMAIL</span><span aria-hidden="true">↗</span></a></div></div></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap footer-top"><a class="footer-brand" href="#home">TEDD JAMES<span>®</span></a><p>Pictures you can almost hear.</p><div class="footer-links"><a href="https://www.instagram.com/teddjamez/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="mailto:iamteddjames@gmail.com">EMAIL ↗</a></div></div><div class="wrap footer-bottom"><span>© <span id="year">2026</span> TEDD JAMES. ALL FRAMES RESERVED.</span><span>MADE WITH FEELING <span class="footer-flower">✳</span></span><a href="#home">BACK TO TOP ↑</a></div></footer>
 </body>
 </html>
